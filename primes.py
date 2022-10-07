@@ -4,19 +4,23 @@ import math
 
 def primes(number_of_primes):
     
-    if number_of_primes <=0:
-        raise ValueError("number has to be less than 0")
+    try: 
+        if number_of_primes<=0:
+            raise ValueError
     
-    list =[]
-    num =1
-    count = 0
-    while count!= number_of_primes:
-        if isPrime(num):
-            print(count)
-            list.append(num)
-            count+=1
-        num+=1
-    return list
+        list =[]
+        num =1
+        count = 0
+        while count!= number_of_primes:
+            if isPrime(num):
+                print(count)
+                list.append(num)
+                count+=1
+            num+=1
+        return list
+    
+    except:
+        print("number has to be larger than 0")
 
   
         
@@ -30,4 +34,4 @@ def isPrime(num):
         if num% i ==0:
             return False
     return True
-print(primes(0)) 
+print(primes(-11)) 
