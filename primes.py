@@ -3,18 +3,21 @@ import math
 """ENTER YOUR SOLUTION HERE!"""
 
 def primes(number_of_primes):
-    if number_of_primes <=0:
-        raise Exception (ValueError)
-    list =[]
-    num =1
-    count = 0
-    while count!= number_of_primes:
-        if isPrime(num):
-            print(count)
-            list.append(num)
-            count+=1
-        num+=1
-    return list
+    try:
+        if number_of_primes() <=0:
+            raise Exception(ValueError)
+        list =[]
+        num =1
+        count = 0
+        while count!= number_of_primes:
+            if isPrime(num):
+                print(count)
+                list.append(num)
+                count+=1
+            num+=1
+        return list
+    except:
+        print("value has to be larger than 0")
   
         
         
@@ -27,5 +30,3 @@ def isPrime(num):
         if num% i ==0:
             return False
     return True
-
-print(primes(-1))
