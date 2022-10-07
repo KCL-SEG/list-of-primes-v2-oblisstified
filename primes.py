@@ -5,7 +5,7 @@ import math
 def primes(number_of_primes):
     
     if number_of_primes <=0:
-        raise Exception(ValueError("number has to be more than 0"))
+        raise Exception(ValueError)
     list =[]
     num =1
     count = 0
