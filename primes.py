@@ -5,7 +5,8 @@ import math
 def primes(number_of_primes):
     
     if number_of_primes <=0:
-        raise Exception(ValueError)
+        raise ValueError
+    
     list =[]
     num =1
     count = 0
@@ -29,4 +30,4 @@ def isPrime(num):
         if num% i ==0:
             return False
     return True
-print(primes(-1)) 
+print(primes(0)) 
