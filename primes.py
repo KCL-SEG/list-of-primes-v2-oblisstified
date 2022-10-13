@@ -4,12 +4,12 @@ import math
 
 def primes(number_of_primes):
     
-    try: 
-        if number_of_primes<=0:
-            raise ValueError
-    
-        list =[]
-        num =1
+     ##good variable names 
+    if number_of_primes<=0:
+        raise ValueError("has to be larger than 0")
+    else:
+        list =[] ##have a more appropriate name for the list
+        num = 1
         count = 0
         while count!= number_of_primes:
             if isPrime(num):
@@ -18,14 +18,6 @@ def primes(number_of_primes):
                 count+=1
             num+=1
         return list
-    
-    except:
-        print("number has to be larger than 0")
-
-  
-        
-        
-  
   
 def isPrime(num):
     if num ==1:
@@ -34,4 +26,4 @@ def isPrime(num):
         if num% i ==0:
             return False
     return True
-print(primes(-11)) 
+primes(0)
