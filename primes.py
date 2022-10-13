@@ -13,7 +13,6 @@ def primes(number_of_primes):
         count = 0
         while count!= number_of_primes:
             if isPrime(num):
-                print(count)
                 list.append(num)
                 count+=1
             num+=1
@@ -26,4 +25,3 @@ def isPrime(num):
         if num% i ==0:
             return False
     return True
-primes(0)
