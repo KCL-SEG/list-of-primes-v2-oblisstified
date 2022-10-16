@@ -6,7 +6,7 @@ def primes(number_of_primes):
     
      ##good variable names 
     if number_of_primes<=0:
-        raise ValueError("has to be larger than 0")
+        raise ValueError('has to be larger than 0')
     else:
         list =[] ##have a more appropriate name for the list
         num = 1
